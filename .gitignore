@@ -8,6 +8,7 @@
 .env
 .env.backup
 .env.example
+.envexample
 .env.production
 .phpunit.result.cache
 Homestead.json

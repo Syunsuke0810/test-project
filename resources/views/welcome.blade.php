@@ -12,7 +12,8 @@
                     動画や資料で勉強して時給アップ♪<br>
                     ブランクがある方や転職を希望される方もどうぞ<br></p>
                     <p class="my-4 mt-10 ml-5 text-3xl font-bold text-yellow-100 tml-4 ext-center mlleading-tight md:text-5l md:text-left slide-in-bottom-h1" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
-                    最初から常時雇用されるのは不安ですよね。お気持ちわかります！
+                    最初から常時雇用されるのは不安ですよね。<br>
+                    弊社コンサルタントが求人、求職をサポート！
                 </p>
 
 
@@ -34,7 +35,7 @@
 
                 <div class="flex justify-center w-full pb-24 md:justify-start lg:pb-0 fade-in ">
                     <a href="{{route('contact.create')}}"><x-primary-button class="ml-5 btnsetg">お問い合わせ</x-primary-button></a>
-                    <a href="{{route('register')}}"><x-primary-button class="mr-5 btnsetr">ご登録はこちら</x-primary-button></a>
+                    <a href="{{route('register')}}"><x-primary-button class="mr-5 btnsetr">採用担当者はこちら</x-primary-button></a>
 
                     <a href="{{route('register')}}" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
                         <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
@@ -44,7 +45,7 @@
                         <span class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
                         <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </span>
-                        <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">ケアクルーに登録する</span>
+                        <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">ケアクルー登録</span>
                         </a>
                 </div>
             </div>
@@ -68,7 +69,58 @@
     </div>
 </section>
 
-<section class=" bg-green-50">
+<section class="transition duration-500 ease-in-out bg-green-100 hover:bg-green-200">
+    <div class="max-w-6xl p-5 mx-auto">
+      <h2 class="my-4 text-3xl font-bold text-gray-900">
+        <strong class="block transition duration-300 hover:text-green-600">ケアクルーって？</strong>
+        <span class="text-xl">ご利用前にお読みください</span>
+      </h2>
+      <h3 class="my-5 text-2xl font-bold text-gray-800">
+        子ども達の未来のために活躍できる人たちのことです
+      </h3>
+      <p class="my-4 text-gray-700">
+        保育士や幼稚園教諭、児童発達管理者、指導員など、子どもたちに関わる仕事をする方は、子ども達の未来を守る大切な方々です。<br>
+        しかし、近年では不適切な保育のニュースが度々流れるなど、とても残念な情報で溢れかえっています。<br>
+        そこで弊社では国の古い研修動画に依存しない、最新の子ども達の成長に関する動画やテキストを用意し、それらの研修をクリアすることで業務の質を確保し、高単価を得られる人材を<strong class="font-bold">「ケアクルー」</strong>と名付けました。
+      </p>
+      <p class="my-4 text-gray-700">
+        また、ケアクルーは副業にも最適で、自身が常勤で勤める施設以外に、シフトに合わせて勉強や横の繋がりを増やすための短時間利用が可能です。
+      </p>
+
+      <h3 class="my-5 text-2xl font-bold text-gray-800">
+        資格や経験があれば誰でも「ケアクルー」になれる
+      </h3>
+      <p class="my-4 text-gray-700">
+        「ほいみん」では以下の内容のようなケアクルー登録者が多数おります。
+        <ul class="my-4 ml-8 text-gray-700 list-disc">
+          <li>「ブランクがあるけど急にシフトに入るのは気が引ける」</li>
+          <li>「他の施設も気になるけど派遣や紹介会社に登録するのは面倒」</li>
+          <li>「本業があるので早朝や夜間だけ利用したい」</li>
+          <li>「フリーランスとして働きたいけど自分で営業はできない」</li>
+          <li>「施設の給料が安いけど、子ども達とは離れたくないので副業がしたい」</li>
+        </ul>
+        そんな方々にはピッタリです。
+      </p>
+
+      {{-- <h3 class="my-5 text-2xl font-bold text-gray-800">
+        施設が導入するメリット
+      </h3> --}}
+
+      <section class="mt-10">
+        <h3 class="mb-6 text-2xl font-bold text-gray-800">施設が導入するメリット</h3>
+        <ul class="pl-5 space-y-2 text-gray-700 list-disc">
+          <li class="text-lg text-gray-700">「１人の常勤社員を雇用するほどでもない」</li>
+          <li class="text-lg text-gray-700">「紹介会社の採用手数料の８０万近くが運営費響く」</li>
+          <li class="text-lg text-gray-700">「早朝や日曜日にケアクルーが来てくれたら開所時間が増えてニーズが高まる」</li>
+          <li class="text-lg text-gray-700">「必要な時間や短時間で頼めるから手数料が気にならない」</li>
+          <li class="text-lg text-gray-700">「運営が安定するので子ども達や職員への還元ができる」</li>
+        </ul>
+        <p class="mt-4 text-lg">そんな施設の運営者にはピッタリです。</p>
+    </section>
+  </div>
+</section>
+
+{{-- <section class=" bg-green-50">
     <p class="p-5">
     <h2><strong class="ml-5">ケアクルーって？</strong><span>ご利用前にお読み下さい</span></h2>
     </p>
@@ -104,9 +156,9 @@
           <li>「運営が安定するので子ども達や職員への還元ができる」</li>
           <br>そんな施設の運営者にはピッタリです。
         </ul>
-    </section>
+    </section> --}}
 
-    <section class="bg1">
+    {{-- <section class="bg1">
 
         <h2  class="m-5" style="font-size: 2rem;">PICKUP<span>注目の施設</span></h2>
 
@@ -153,6 +205,20 @@
 
         </div>
 
-        </section>
+        </section> --}}
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const section = document.querySelector('section.bg-green-100');
+
+              section.addEventListener('mouseenter', () => {
+                section.classList.replace('bg-green-100', 'bg-green-200');
+              });
+
+              section.addEventListener('mouseleave', () => {
+                section.classList.replace('bg-green-200', 'bg-green-100');
+              });
+            });
+          </script>
+
 
 </x-guest-layout>
