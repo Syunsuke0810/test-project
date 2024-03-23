@@ -30,7 +30,7 @@
                     児童発達管理者
                 </p>
                 <p class="pb-8 ml-5 font-bold text-center text-blue-400 lg:pb-6 md:text-left fade-in" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
-                    会員募集中。お気軽にひょっこりきてください。
+                    会員募集中。
                 </p>
 
                 <div class="flex justify-center w-full pb-24 md:justify-start lg:pb-0 fade-in ">
