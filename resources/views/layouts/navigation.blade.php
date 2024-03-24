@@ -5,9 +5,9 @@
             <div class="flex">
 
                 <!-- Logoをクリックでダッシュボードへ遷移 -->
-                <div style="max-height:60px" class="flex items-center shrink-0" >
+                <div class="flex items-center w-20 shrink-0" >
                     <a href="{{ route('dashboard') }}">
-                            <x-application-logo />
+                            <x-application-logo/>
                     </a>
                 </div>
 

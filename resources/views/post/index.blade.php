@@ -17,10 +17,10 @@
 
         {{-- 修正部分 --}}
         <div class="flex">
-            <div class="w-12 h-12 rounded-full">
+            {{-- <div class="w-12 h-12 rounded-full">
             <!-- アバター表示 -->
             <img src="{{asset('storage/avatar/'.($post->user->avatar??'user_default.jpg'))}}" class="rounded-full">
-            </div>
+            </div> --}}
             <h1 class="pt-4 text-lg font-semibold text-gray-700 cursor-pointer hover:underline">
             <a href="{{route('post.show', $post)}}">{{ $post->title }}</a>
             </h1>

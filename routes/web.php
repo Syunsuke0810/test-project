@@ -20,6 +20,7 @@ use App\Http\Controllers\RoleController;
 |
 */
 
+// お問い合わせ
 Route::controller(ContactController::class)->group(function(){
     Route::get('contact/create','create')->name('contact.create');
     Route::post('contact/store','store')->name('contact.store');
@@ -57,6 +58,7 @@ Route::middleware(['can:admin'])->group(function () {
     Route::patch('roles/{user}/attach', [RoleController::class, 'attach'])->name('role.attach');
     Route::patch('roles/{user}/detach', [RoleController::class, 'detach'])->name('role.detach');
 });
+
 // ログイン後の通常のユーザー画面
 Route::middleware(['verified'])->group(function(){
     Route::post('post/comment/store', [CommentController::class, 'store'])->name('comment.store');

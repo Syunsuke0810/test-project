@@ -8,6 +8,7 @@
 .env
 .env.backup
 .env.example
+.envexampl
 .envexample
 .env.production
 .phpunit.result.cache
