@@ -1,5 +1,5 @@
 <x-app-layout>
-　　　　　　　　{{ Auth::user()->name }} さん　こんにちは
+    　　　　　{{ Auth::user()->name }} さん　こんにちは
     <x-slot name="header">
         <h2 class="text-xl font-semibold leading-tight text-gray-800">
             投稿フォーム
@@ -22,7 +22,7 @@
             <img src="{{asset('storage/avatar/'.($post->user->avatar??'user_default.jpg'))}}" class="rounded-full">
             </div> --}}
             <h1 class="pt-4 text-lg font-semibold text-gray-700 cursor-pointer hover:underline">
-            <a href="{{route('post.show', $post)}}">{{ $post->title }}</a>
+            <a href="{{route('post.show', $post)}}" class="text-blue-700">施設名：{{ $post->title }}</a>
             </h1>
         </div>
         {{-- 修正部分ここまで --}}
@@ -47,7 +47,7 @@
              <a href="{{route('post.show', $post)}}" style="color:white;">
                 <div class="flex justify-end mr-4">
                     {{-- 右端にボタンがくっついて寄らない --}}
-                    <x-primary-button class="mr-4">問い合わせする</x-primary-button>
+                    <x-primary-button class="mr-4 ">詳細</x-primary-button>
                 </div>
              </a>
         </div>

@@ -8,8 +8,8 @@
     <div class="px-6 mx-auto max-w-7xl">
         <div class="w-full bg-white rounded-2xl">
                 <div class="p-4 mt-4">
-                <h1 class="text-lg font-semibold">
-                {{ $post->title }}
+                <h1 class="text-lg font-semibold text-blue-700">
+                施設名：{{ $post->title }}
                 </h1>
 
                 <div class="flex text-right">
@@ -26,7 +26,7 @@
                     @method('delete')
                     {{-- 本当に削除しますか？が表示されない --}}
                     <x-primary-button  class="bg-red-500 flex-text-right" onClick="return confirm('本当に削除しますか？');">
-                    消すよ
+                    削除
                     </x-primary-button>
                     </form>
                     @endcan
@@ -72,6 +72,17 @@
                 </div>
                 <div class="flex justify-end">
                 <x-primary-button class="mb-12 mr-4 ">コメントする</x-primary-button>
+
+                {{-- <a href="{{route('contact.create')}}">
+                <x-primary-button class="mb-12 mr-4 text-white bg-green-600 hover:bg-green-700">メールで問い合わせ</x-primary-button></a>
+                <a href="{{route('contact.create')}}"><x-primary-button class="mb-12 mr-4 text-white bg-green-600 hover:bg-green-700">お問い合わせ</x-primary-button></a>
+                <a href="{{route('contact.create')}}"><x-primary-button class="ml-5 btnsetg">お問い合わせ</x-primary-button></a>
+                <a href="{{route('register')}}"><x-primary-button class="mr-5 btnsetr">採用担当者はこちら</x-primary-button></a> --}}
+
+                <a href="{{ route('contact.create') }}" class="inline-flex items-center px-4 py-2 mb-12 mr-4 text-xs font-semibold tracking-widest text-white uppercase transition duration-150 ease-in-out bg-green-600 border border-transparent rounded-md hover:bg-green-700 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-200 active:bg-green-700">
+                    メールで問い合わせ
+                </a>
+
                 </div>
                 </form>
         </div>
