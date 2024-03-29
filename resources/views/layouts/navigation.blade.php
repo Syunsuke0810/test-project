@@ -20,7 +20,7 @@
                         新規作成
                     </x-nav-link>
                     <x-nav-link :href="route('post.mypost')" :active="request()->routeIs('post.mypost')">
-                        お気に入り
+                        自園の投稿
                     </x-nav-link>
                     <x-nav-link :href="route('post.mycomment')" :activ="request()->routeIs('post.mycomment')">
                         コメントした投稿

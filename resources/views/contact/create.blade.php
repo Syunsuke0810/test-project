@@ -18,13 +18,14 @@
                 </div>
 
                 <div class="flex flex-col w-full">
-                    <label for="body" class="mt-4 font-semibold leading-none">本文</label>
-                    <textarea name="body" class="w-auto py-2 border border-gray-300 rounded-md" id="body" cols="30" rows="10">{{old('body')}}</textarea>
+                    <label for="body" class="mt-4 font-semibold leading-none">本文（下記の必須項目を忘れずにご記入ください）</label>
+                    <textarea name="body" class="w-auto py-2 border border-gray-300 rounded-md" id="body" cols="30" rows="10">{{ old('body', "名　　前：\n性　　別：\n年　　齢：\n最寄駅　：\n保有資格：\n連絡先　：\n相談内容：") }}</textarea>
+                    
                 </div>
 
                 <div class="items-center md:flex">
                     <div class="flex flex-col w-full">
-                        <label for="email" class="mt-4 font-semibold leading-none">メールアドレス</label>
+                        <label for="email" class="mt-4 font-semibold leading-none">メールアドレス（必須）</label>
                         <input type="text" name="email" class="w-auto py-2 placeholder-gray-300 border border-gray-300 rounded-md" id="email" value="{{old('email')}}" placeholder="Enter Email">
                     </div>
                 </div>

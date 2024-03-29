@@ -1,5 +1,37 @@
 <x-app-layout>
     　　　　　{{ Auth::user()->name }} さん　こんにちは
+    <div class="max-w-md mx-auto overflow-hidden bg-white shadow-lg rounded-xl md:max-w-2xl">
+        <div class="p-4 bg-gradient-to-r from-teal-400 to-blue-500">
+            <h3 class="text-xl font-bold text-center text-white">ケアクルーの皆様へ【ルールブック】</h3>
+        </div>
+        <ul class="p-4 m-4 space-y-2 list-disc">
+            <li class="text-teal-600">ケアクルーの方は求人の新規作成は出来ませんのでご注意下さい。</li>
+            <li class="text-teal-600">求人投稿の権限は施設担当者のみですのでご了承ください。</li>
+            <li class="text-teal-600">ご希望の求人がありましたら、掲示板の詳細からLINEのQRコード読み取り、またはメールで問い合わせを行い、施設担当者と直接やりとりを行ってください。</li>
+            <li class="text-teal-600">報酬は直接勤務した施設より受け取ってください</li>
+            <li class="text-teal-600">不安な事や気になる事があれば、すぐにほいみん事務局へご連絡ください。</li>
+            <li class="text-teal-600">ぜひ副業を楽しんで活躍してください♪</li>
+        </ul>
+    </div>
+{{--     
+    <div class="max-w-lg mx-auto mt-10">
+        <div class="p-5 text-white bg-gray-800 rounded-t-lg">
+            <h3 class="text-xl font-semibold text-center">ケアクルーの皆様へ【ルールブック】</h3>
+        </div>
+        <ul class="bg-white divide-y divide-gray-300 rounded-b-lg">
+            <li class="p-3 hover:bg-gray-50">ケアクルーの方は求人の新規作成は出来ませんのでご注意下さい。</li>
+            <li class="p-3 hover:bg-gray-50">求人投稿の権限は施設担当者のみですのでご了承ください。</li>
+            <li class="p-3 hover:bg-gray-50">ご希望の求人がありましたら、LINEのQRコード読み取り、またはメールで問い合わせを行ってください。</li>
+            <li class="p-3 hover:bg-gray-50">報酬は直接勤務した施設より受け取ってください</li>
+            <li class="p-3 hover:bg-gray-50">不安な事や気になる事があれば、すぐにほいみん事務局へご連絡ください。</li>
+            <li class="p-3 hover:bg-gray-50">ぜひ副業を楽しんで活躍してください♪</li>
+        </ul>
+    </div>
+     --}}
+
+
+
+    </p>
     <x-slot name="header">
         <h2 class="text-xl font-semibold leading-tight text-gray-800">
             投稿フォーム

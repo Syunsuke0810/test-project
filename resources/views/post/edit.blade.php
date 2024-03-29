@@ -29,13 +29,26 @@
                 <textarea name="body" class="w-full py-2 border border-gray-300 rounded-md" id="body" cols="30" rows="5">{{ old('body',$post->body) }}</textarea>
             </div>
 
+            {{-- <div class="flex flex-col w-full">
+                <label for="image" class="mt-4 font-semibold leading-none">LINE QRコード</label>
+                <div>
+                    <input id="image" type="file" name="image">
+                </div>
+            </div> --}}
+
             <div class="flex flex-col w-full">
-                <label for="image" class="mt-4 font-semibold leading-none">画像 （1MBまで）</label>
+                @if($post->image)
+                    <div>
+                        (画像ファイル：{{$post->image}})
+                    </div>
+                    <img src="{{ asset('storage/images/'.$post->image)}}" class="mx-auto" style="height:300px;">
+                @endif
+                <label for="image" class="mt-4 font-semibold leading-none">新しいQRコード </label>
                 <div>
                     <input id="image" type="file" name="image">
                 </div>
             </div>
-
+            
             <x-primary-button class="mt-4">
                 送信する
             </x-primary-button>
