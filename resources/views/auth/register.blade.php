@@ -23,11 +23,11 @@
         </div>
 
         <!-- Avatar -->
-        <div class="mt-4">
+        {{-- <div class="mt-4">
             <x-input-label for="avatar" :value="__('プロフィール画像（任意・1MBまで）')" />
 
             <x-text-input id="avatar" class="block w-full mt-1 rounded-none" type="file" name="avatar" :value="old('avatar')" />
-        </div>
+        </div> --}}
 
         <!-- Password -->
         <div class="mt-4">
