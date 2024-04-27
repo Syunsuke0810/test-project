@@ -35,7 +35,8 @@
 
                 <div class="flex justify-center w-full pb-24 md:justify-start lg:pb-0 fade-in ">
                     <a href="{{route('contact.create')}}"><x-primary-button class="ml-5 btnsetg">お問い合わせ</x-primary-button></a>
-                    <a href="{{route('register')}}"><x-primary-button class="mr-5 btnsetr">採用担当者はこちら</x-primary-button></a>
+                    <a href="{{ route('register2') }}"><x-primary-button class="mr-5 btnsetr">採用担当者はこちら</x-primary-button></a>
+
 
                     <a href="{{route('register')}}" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
                         <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>

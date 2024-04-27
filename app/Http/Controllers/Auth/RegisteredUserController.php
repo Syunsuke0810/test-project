@@ -18,6 +18,26 @@ class RegisteredUserController extends Controller
     /**
      * Display the registration view.
      */
+    public function storeFacility(Request $request)
+    {
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+        ]);
+
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+
+        Auth::login($user);
+
+        return redirect('post');  // 掲示板へのリダイレクト
+        // postのファイル名がないのに、なぜか表示されている。本当はpostフォルダにあるindex.blade.php
+    }
+
     public function create(): View
     {
         return view('auth.register');

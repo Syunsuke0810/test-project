@@ -22,6 +22,11 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 |
 */
 
+Route::get('/register2', function () {
+    return view('auth.register2');  // 新しい登録フォームのビュー
+})->name('register2');
+
+Route::post('/register2', [RegisteredUserController::class, 'storeFacility'])->name('register2.store');
 
 Route::get('/', function () {
     return view('welcome'); // welcomeビューを表示する
