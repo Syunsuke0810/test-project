@@ -6,6 +6,7 @@
         </div>
         <ul class="p-4 m-4 space-y-2 list-disc">
             <li class="text-teal-600">ケアクルーの方は求人の新規作成は出来ませんのでご注意下さい。</li>
+            <li class="text-teal-600">こちらをご覧いただくためには必ず研修動画の視聴が必要です。</li>
             <li class="text-teal-600">求人投稿の権限は施設担当者のみですのでご了承ください。</li>
             <li class="text-teal-600">ご希望の求人がありましたら、掲示板の詳細からLINEのQRコード読み取り、またはメールで問い合わせを行い、施設担当者と直接やりとりを行ってください。</li>
             <li class="text-teal-600">報酬は直接勤務した施設より受け取ってください</li>
@@ -13,7 +14,8 @@
             <li class="text-teal-600">ぜひ副業を楽しんで活躍してください♪</li>
         </ul>
     </div>
-{{--     
+
+{{--
     <div class="max-w-lg mx-auto mt-10">
         <div class="p-5 text-white bg-gray-800 rounded-t-lg">
             <h3 class="text-xl font-semibold text-center">ケアクルーの皆様へ【ルールブック】</h3>

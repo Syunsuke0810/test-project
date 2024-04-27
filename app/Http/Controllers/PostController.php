@@ -8,14 +8,17 @@ use App\Models\Comment;
 
 class PostController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      */
+    
     public function mycomment(){
         $user=auth()->user()->id;
         $comments=Comment::where('user_id',$user)->orderBy('created_at','desc')->get();
         return view('post.mycomment',compact('comments'));
     }
+
 
     public function mypost(){
         $user=auth()->user()->id;

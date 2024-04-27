@@ -7,6 +7,7 @@ use App\Http\Controllers\ChatController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\Auth\RegisteredUserController;
 
 
 
@@ -22,6 +23,17 @@ use App\Http\Controllers\RoleController;
 */
 
 
+Route::get('/', function () {
+    return view('welcome'); // welcomeビューを表示する
+})->name('top');
+
+// 登録後にmovieビューへリダイレクトする
+Route::post('/register', [RegisteredUserController::class, 'store'])->name('register');
+
+// Movie ページのルート
+Route::get('/movie', function () {
+    return view('movie');
+});
 
 // お問い合わせ
 Route::controller(ContactController::class)->group(function(){
@@ -42,9 +54,10 @@ Route::post('post/comment/store',[CommentController::class,'store'])->name('comm
 
 Route::resource('post',PostController::class);
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('top');
+Route::get('/index', [PostController::class, 'index'])->name('index');
+// Route::get('/index', function () {
+//     return view('post.index');  // ここで index.blade.php を表示するように変更
+// })->name('index');  // ルート名を 'index' に設定
 
 Route::get('/dashboard', function () {
     return view('dashboard');
